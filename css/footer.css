@@ -1,0 +1,206 @@
+/* footer area */
+#footer {
+    width: 100%;
+    height: auto;
+}
+/* footer company area */
+#company {
+    padding: 3.9rem 2rem 3.5rem;
+    box-sizing: border-box;
+    border-top: 1px solid #d9dbe1;
+    background-color: #f3f4f8;
+}
+#company > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+#company .company__inserted {
+    width: 74%;
+}
+.inserted {
+    display: flex;
+}
+.inserted > li {
+    position: relative;
+    width: 30%;
+}
+.inserted > li::after {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("../images/icon/aff-arrow.svg")center center no-repeat;
+    background-size: cover;
+}
+.inserted > li.change::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+.inserted > li > h6 {
+    margin: 1.6rem 0;
+    color: var(--color-dark);
+    font-size: 1.6rem;
+}
+/* inserted_list */
+.inserted_list.slide {display: block;}
+.slide {display: block;}
+
+.inserted_list > li {
+    line-height: 2.2rem;
+    height: 2.2rem;
+    margin: 0.2rem 0;
+}
+.inserted_list > li > a {
+    display: block;
+    color: var(--color-darkGray);
+    font-size: 1.4rem;
+}
+
+/* footer company - sns area */
+.sns {
+    width: 25%;
+}
+.sns ul:first-of-type {
+    display: flex;
+    justify-content: end;
+}
+.sns ul:first-of-type > li {
+    padding-left: 0.8rem;
+    box-sizing: border-box;
+}
+.sns ul:first-of-type > li > a {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+}
+.sns ul:last-of-type {
+    display: flex;
+    justify-content: end;
+    margin: 1rem 0 0 0;
+}
+.sns ul:last-of-type > li {
+    padding-left: 1.8rem;
+    box-sizing: border-box;
+}
+.sns ul:last-of-type > li > a {
+    display: block;
+    vertical-align: top;
+    width: 11.8rem;
+    height: 3.4rem;
+}
+
+/* footer contact area */
+#contact {
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: var(--color-light);
+}
+#contact > div {
+    max-width: 128rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+#contact > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+/* contact left area */
+.contact__lf {
+    width: 60%;
+    font-size: 1.4rem;
+}
+.contact__lf ul {
+    width: 100%;
+}
+.contact__lf ul > li {
+    position: relative;
+    float: left;
+    line-height: 1.5;
+    margin-right: 1rem;
+    color: var(--color-lightgray);
+    word-break: keep-all;
+}
+.contact__lf  ul > li > strong {
+    color:var(--color-main);
+    margin-right: 1.3rem;
+}
+.contact__lf ul > li::after {
+    content: "";
+    display: inline-block;
+    width: 0.1rem;
+    height: 1.1rem;
+    margin-left: 1rem;
+    background-color: #d9dbe1;
+}
+.contact__lf ul > li:nth-of-type(1)::before {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 0.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("../images/icon/aff-arrow.svg")center center no-repeat;
+    background-size: cover;
+}
+.contact__lf ul > li.change:nth-of-type(1)::before {
+    transform: rotate(180deg);
+    transform-origin: center;
+}
+.contact__lf ul > li:nth-of-type(3):after,
+.contact__lf ul > li:nth-of-type(6):after {
+    content: none;
+}
+/* contact right area */
+.contact__rt {
+    width: auto;
+}
+.contact__rt ul {
+    display: flex;
+    justify-content: end;
+}
+.contact__rt ul > li {
+    margin: 0 0.5rem;
+    box-sizing: border-box;
+}
+.contact__rt ul > li > a {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    background-position: center;
+    border-radius: 1rem;
+}
+.contact__rt ul > li:nth-of-type(1) > a {
+    background: url(../images/icon/logo__wa.svg)center center no-repeat;
+}
+.contact__rt ul > li:nth-of-type(2) > a {
+    background: url(../images/icon/logo__isms.png)center center no-repeat;
+}
+.contact__rt ul > li:nth-of-type(3) > a {
+    background: url(../images/icon/logo__ccm.png)center center no-repeat;
+}
+.contact__rt ul > li:nth-of-type(4) > a {
+    background: url(../images/icon/logo__skytrax.png)center center no-repeat;
+}
+#contact div > p {
+    text-transform: uppercase;
+    color: var(--color-darkGray);   
+}
+
+/* hover */
+.contact__rt ul > li:hover > a  {
+    box-shadow: inset 0 0 0 1px var(--color-blue);}
+
+.notice__banner:hover {
+    box-shadow: 0 0 0 0.2rem var(--color-light), 0 0 0 0.3rem var(--color-blue);}
+
+.inserted_list > li:hover > a,
+.inserted-m > li:hover > h6,
+.inserted_list-m > li:hover > a {
+    text-decoration: underline;
+}

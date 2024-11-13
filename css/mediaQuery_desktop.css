@@ -1,0 +1,9 @@
+/*1280px*/
+@media screen and (max-width:1280px){
+    html,body {
+        width: 100%;
+    }
+    .nav__menu_sub {
+        width: 100vw;
+    }
+}

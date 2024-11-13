@@ -1,0 +1,28 @@
+/*520px*/
+@media screen and (max-width:561px){
+    .swiper-slide div:last-of-type {
+        padding: 1.6rem 1.6rem;
+    }
+    .swiper-slide p {
+        font-size: 1.4rem;
+    }
+}
+/* 480px */
+@media screen and (max-width:480px){
+    .swiper-slide {
+        width: 100%;
+    }
+    .swiper-slide div:last-of-type {
+        padding: 1.6rem 2.4rem;
+    }
+    .swiper-slide p {
+        font-size: 1.6rem;
+    }
+}
+/* 360px */
+@media screen and (min-width:360px) {
+    .tab__content > input[type="radio"] + label {
+        font-size: 1.1rem;
+    }
+}
+
